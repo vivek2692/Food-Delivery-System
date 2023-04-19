@@ -1,0 +1,16 @@
+.categories_container{
+  padding: 5rem 10rem;
+}
+
+.cat_head{
+    font-size: 26px;
+}
+
+.cat_cards{
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}

@@ -1,0 +1,56 @@
+.feedback_container{
+    padding: 5rem 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.feedback_left{
+    width: 50%;
+}
+
+.feedback_left .feedback_title{
+    font-size: 3rem;
+    margin-bottom: 3rem;
+}
+
+.feedback_left .feedback_desc{
+    color: grey;
+    text-align: justify;
+    font-size: 18px;
+    margin-bottom: 4rem;
+}
+
+.feedback_right{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.feedback_customer{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 14px;
+}
+
+.customer_left {
+    width: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.customer_left img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    border-radius: 50%;
+}
+
+.customer_name{
+    font-size: 22px;
+    font-weight: 600;
+}

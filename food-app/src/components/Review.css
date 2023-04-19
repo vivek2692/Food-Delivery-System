@@ -1,0 +1,59 @@
+.review_container{
+    padding: 5rem 10rem;
+    margin-top: 40px;
+}
+
+.review_container .main_review_form{
+    width: 100%;
+    position: relative;
+    /* border: 1px solid black; */
+    height: 65vh;
+    background: url("https://cdn.pixabay.com/photo/2018/04/13/17/12/vegetable-skewer-3317055_960_720.jpg") no-repeat center center/cover;
+    border-radius: 40px;
+}
+
+.review_container .main_review_form img{
+    position: absolute;
+    width: 60%;
+    bottom: 0;
+}
+
+.review_container .main_review_form .review_form{
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+    position: absolute;
+    right: 0;
+    height: 100%;
+    border-radius: 40px;
+    background-color: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(15px);
+}
+
+.review_container .main_review_form .review_form input,
+.review_container .main_review_form .review_form textarea{
+    width: 80%;
+    margin-bottom: 40px;
+    padding: 0.8rem 2rem;
+    border: 2px solid white;
+    outline: none;
+    background-color: rgba(183, 180, 180, 0.560);
+    color: white;
+    font-size: 1.1rem;
+    border-radius: 30px;
+}
+
+.review_container .main_review_form .review_form input::placeholder,
+.review_container .main_review_form .review_form textarea::placeholder{
+    color: white;
+}
+
+.review-btn{
+    padding: 8px 20px;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    border: 2px solid white;
+}

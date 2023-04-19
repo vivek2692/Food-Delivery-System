@@ -1,0 +1,99 @@
+.Home_Banner_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.bg-trans {
+  position: absolute;
+  width: 25rem;
+  opacity: 0.1;
+  /* top: 0; */
+  left: 4rem;
+  bottom: 16rem;
+  transform: rotate(30deg);
+}
+
+.banner_left {
+  width: 50%;
+  /* border: 1px solid black; */
+  padding: 5rem 10rem;
+  font-size: 2rem;
+  letter-spacing: 2px;
+  padding-right: 9rem;
+}
+
+.search-btn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.banner_left .delivery_p {
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.banner_left .delivery_p .delivery_img {
+  width: 40px;
+  height: 40px;
+}
+
+.highlight {
+  color: rgba(255, 109, 56, 1);
+}
+
+.banner_right {
+  width: 50%;
+  padding: 4rem 10rem;
+}
+
+.Home_Banner_container .banner_left .btn-secondary {
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.banner_icons {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2rem;
+}
+
+.banner_right_img_div {
+  position: relative;
+  border: 1px solid black;
+  border-radius: 30px;
+  height: 70vh;
+  width: 25vw;
+  background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+    url("../../public/BannerImg.jpg") center center/cover;
+
+  -webkit-box-shadow: 0px 4px 22px -6px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 0px 4px 22px -6px rgba(0, 0, 0, 1);
+  box-shadow: 0px 4px 22px -6px rgba(0, 0, 0, 1);
+}
+
+.banner_right_img_div .first-img {
+  border: none;
+  background: transparent;
+  height: 70%;
+  width: 100%;
+  position: absolute;
+  top: 7rem;
+  right: 7rem;
+}
+
+.banner_right_img_div .second-img {
+    border: none;
+    background: transparent;
+    height: 55%;
+    width: 65%;
+    position: absolute;
+    bottom: 20rem;
+    left: 14rem;
+  }

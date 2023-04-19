@@ -1,0 +1,215 @@
+.cart-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 2rem 5rem;
+  gap: 2rem;
+}
+
+.cart-container .cart-left {
+  width: 65%;
+  border-radius: 20px;
+  height: fit-content;
+  padding: 10px 15px;
+  background: rgba(184, 184, 184, 0.373);
+  -webkit-box-shadow: 0px 4px 17px -6px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0px 4px 17px -6px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 4px 17px -6px rgba(0, 0, 0, 0.4);
+}
+
+.cart-container .cart-left h2 {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.order .item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.order .item .item-img {
+  width: 25%;
+  height: 150px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.order .item .item-img img {
+  border-radius: 0px 0px 20px 20px;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.order .item .item-info {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  width: 26%;
+  padding-left: 20px;
+}
+
+.order .item .item-info .item-details {
+  font-weight: 300;
+  text-align: right;
+}
+
+.order .item .item-quantity {
+  width: 30%;
+}
+
+.order .item .item-quantity input {
+  width: 16%;
+  margin: 2px 20px;
+  border-radius: 10px;
+  padding: 5px 10px;
+  font-weight: 500;
+  font-size: 0.9rem;
+  outline: none;
+  border: none;
+}
+
+.order .item .item-quantity input[type="number"]::-webkit-inner-spin-button,
+.order .item .item-quantity input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+.cart-container .cart-right {
+  width: 35%;
+  border-radius: 20px;
+  overflow: hidden;
+  -webkit-box-shadow: 0px 4px 17px -6px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px 4px 17px -6px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 4px 17px -6px rgba(0, 0, 0, 0.5);
+  padding-top: 15px;
+}
+
+.cart-container .cart-right h2 {
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.cart-container .cart-right .bill {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.bill .bill-top {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.bill-header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 5px 10px;
+  background: rgba(255, 109, 56, 1);
+  font-weight: bold;
+  color: black;
+  font-size: 1rem;
+}
+
+.bill-rows {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 5px 10px;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.dish-name {
+  width: 40%;
+  text-align: center;
+}
+
+.dish-quantity {
+  width: 30%;
+  text-align: center;
+}
+
+.dish-price {
+  width: 30%;
+  text-align: center;
+}
+
+.bill-bottom {
+  margin-top: 10px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(184, 184, 184, 0.373);
+}
+
+.final-bill {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0px;
+}
+
+.final-bill p {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.span1 {
+  display: inline-block;
+  width: 150px;
+  font-weight: bold;
+}
+
+.span2 {
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+.cart-btn {
+  padding: 6px 12px;
+  border-radius: 50%;
+  background-color: rgba(255, 109, 56, 1);
+  border: none;
+  color: white;
+  font-weight: bold;
+  -webkit-box-shadow: 0px 4px 22px -6px rgba(255, 109, 56, 1);
+  -moz-box-shadow: 0px 4px 22px -6px rgba(255, 109, 56, 1);
+  box-shadow: 0px 4px 22px -6px rgba(255, 109, 56, 1);
+  cursor: pointer;
+}
+
+.cart-btn2 {
+  padding: 6px 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: black;
+  border: none;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.pay-btn{
+    /* width: 40%; */
+    padding: 5px 9px;
+    margin-top: 20px;
+    font-size: 1rem;
+    letter-spacing: 2px;
+}
