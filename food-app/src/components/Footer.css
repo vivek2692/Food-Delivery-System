@@ -76,6 +76,7 @@
     outline: none;
     padding: 4px 8px;
     border-radius: 20px;
+    width: 100%;
 }
 
 .footer4 .footer_sub_title{
@@ -104,4 +105,100 @@
     margin-top: 7px;
     font-size: 1.1rem;
     font-weight: bold;
+}
+
+@media only screen and (max-width: 1280px){
+    .footer_container{
+        padding: 3rem 8rem;
+    }
+}
+
+@media only screen and (max-width: 1220px){
+    .footer_container{
+        padding: 3rem 7rem;
+    }
+}
+
+@media only screen and (max-width: 1120px){
+    .footer_container{
+        padding: 3rem 5rem;
+    }
+}
+
+@media only screen and (max-width: 1000px){
+    .footer_container{
+        padding: 2rem 2rem;
+        margin-top: 20px;
+    }
+
+    .footer_top{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+        /* justify-content:space-around; */
+    }
+
+    .footer_title{
+        font-size: 1.8rem;
+        margin-bottom: 18px;
+    }
+
+    .footer1, .footer4, .footer2, .footer3{
+        width: 21%;
+        /* border: 1px solid black; */
+    }
+
+    .footer1 .logo_img{
+        width: 12vw;
+        object-fit: contain;
+        margin-bottom: 10px;
+    }
+
+}
+
+@media only screen and (max-width: 885px){
+    .footer1, .footer4, .footer2, .footer3{
+        width: 24%;
+        /* border: 1px solid black; */
+    }
+}
+
+@media only screen and (max-width: 850px){
+    .footer1, .footer4, .footer2, .footer3{
+        min-width: 80%;
+        text-align: center;
+        /* border: 1px solid black; */
+    }
+
+    .footer_top{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:center;
+        align-items: center;
+    }
+
+    .footer1 .details .detail{
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .footer1 .logo_img{
+        width: 150px;
+        object-fit: contain;
+        margin-bottom: 10px;
+    }
+
+    .footer4 .icons{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        margin-top: 20px;
+    }
+
+    .footer_title{
+        font-size: 1.6rem;
+        margin-bottom: 10px;
+    }
 }

@@ -10,6 +10,7 @@
 .features_left{
     width: 50%;
     padding: 1rem 4rem;
+    margin-top: 60px;
 }
 
 .features_fruits{
@@ -35,7 +36,7 @@
     width: 650px;
     height: 450px;
     position: absolute;
-    right: 1px;
+    right: 0px;
     bottom: 0rem;
 }
 
@@ -81,4 +82,227 @@
 .features .features_box .features_box_right .feature_desc{
     color: rgb(102, 100, 100);
     text-align: justify;
+}
+
+@media only screen and (max-width: 1490px){
+    .features_container{
+        padding: 4rem 8rem;
+    }
+
+    .features_left{
+        width: 45%;
+        padding: 1rem 2rem;
+    }
+
+    .features_right{
+        width: 45%;
+    }
+}
+
+@media only screen and (max-width: 1420px){
+    .features_container{
+        padding: 3rem 7rem;
+        gap: 25px;
+    }
+
+    .features_left{
+        transform: scale(0.9);
+    }
+
+    .features_right{
+        width: 44%;
+    }
+
+    .features_right .features_head{
+        font-size: 2.4rem;
+        margin-bottom: 24px;
+    }
+}
+
+@media only screen and (max-width: 1330px){
+    .features_left{
+        transform: scale(0.9);
+    }
+
+    .features_right{
+        width: 42%;
+    }
+
+    .features_right .features_head{
+        font-size: 2.2rem;
+        margin-bottom: 23px;
+    }
+}
+
+@media only screen and (max-width: 1310px){
+    .features_container{
+        padding: 3rem 6rem;
+        gap: 22px;
+    }
+
+    .features_left{
+        transform: scale(0.9);
+        margin-left: 20px;
+    }
+
+    .features_right{
+        transform: scale(0.9);
+    }
+
+    .features_right .features_head{
+        font-size: 2.1rem;
+        margin-bottom: 23px;
+    }
+}
+
+@media only screen and (max-width: 1310px){
+    .features_container{
+        padding: 3rem 5rem;
+        gap: 14px;
+    }
+
+    .features_left{
+        transform: scale(0.9);
+        margin-left: 20px;
+    }
+
+    .features_right{
+        transform: scale(0.9);
+    }
+}
+
+@media only screen and (max-width: 1270px){
+    .features_container{
+        padding: 3rem 4rem;
+        gap: 6px;
+    }
+
+    .features_left{
+        transform: scale(0.9);
+        margin-left: 50px;
+    }
+
+    .features_right{
+        transform: scale(0.9);
+    }
+}
+
+@media only screen and (max-width: 1220px){
+    .features_container{
+        padding: 3rem 4rem;
+        gap: 6px;
+    }
+
+    .features_left{
+        transform: scale(0.9);
+        margin-left: 80px;
+    }
+
+    .features_right{
+        transform: scale(0.9);
+    }
+}
+
+@media only screen and (max-width: 1190px){
+    .features_container{
+        padding: 3rem 2rem;
+        gap: 80px;
+        flex-direction: column;
+    }
+
+    .features_left{
+        transform: scale(1.1);
+        /* margin-left: 80px; */
+    }
+
+    .features_right{
+        transform: scale(1.1);
+        margin: auto;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .features_right .features_head{
+        font-size: 2.2rem;
+        margin-bottom: 23px;
+        text-align: center;
+    }
+
+    .features .features_box{
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .features{
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 10px;
+        width: 80%;
+    }
+
+    .features_right .features_head{
+        font-size: 1.9rem;
+        margin-bottom: 24px;
+    }
+
+}
+@media only screen and (max-width: 1100px){
+    .features_left{
+        transform: scale(1);
+        /* margin-left: 80px; */
+    }
+
+    .features_fruits .chef-bg{
+        width: 90%;
+        height: 70%;
+        position: relative;
+        left: 0.5rem;
+        bottom: 9rem;
+    }
+    
+    .features_fruits .chef{
+        width: 610px;
+        height: 430px;
+        position: absolute;
+        right: -15px;
+        bottom: 0rem;
+    }
+}
+
+@media only screen and (max-width: 1070px){
+    .features_left{
+        transform: scale(1);
+        /* margin-left: 80px; */
+    }
+
+    .features_fruits .chef-bg{
+        width: 90%;
+        height: 70%;
+        position: relative;
+        left: 0.5rem;
+        bottom: 9rem;
+    }
+    
+    .features_fruits .chef{
+        width: 600px;
+        height: 420px;
+        position: absolute;
+        right: -18px;
+        bottom: 0rem;
+    }
+}
+
+@media only screen and (max-width: 1070px){
+    .features_left{
+        /* transform: scale(1); */
+        display: none;
+        /* margin-left: 80px; */
+    }
+
 }

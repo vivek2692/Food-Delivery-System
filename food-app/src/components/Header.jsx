@@ -1,11 +1,15 @@
 import React, {useState,useEffect} from "react";
 import { Link, useNavigate, useLocation } from "react-router-dom";
 import ShoppingBasketIcon from "@mui/icons-material/ShoppingBasket";
+import MenuIcon from '@mui/icons-material/Menu';
+import CloseIcon from '@mui/icons-material/Close';
 import "./Header.css";
 
 const Header = () => {
   const navigate = useNavigate();
   const location = useLocation();
+
+  const [menuOpen, setMenuOpen] = useState(false);
 
   const userData = localStorage.getItem("user");
   const user = JSON.parse(userData);
@@ -40,25 +44,26 @@ const Header = () => {
       <div className="header_left">
         <img src="/VickyFoods.png" alt="LOGO" className="logo_img" />
       </div>
-      <div className="header_center">
+      <div className="header_center" style={{right: menuOpen ? "0%" : "-30%"}}>
+        <CloseIcon className="closeBtn" onClick={() => setMenuOpen(false)}/>
         <ul>
-          <Link to="/" className="links">
+          <Link to="/" className="links" onClick={() => setMenuOpen(false)}>
             <li>Home</li>
           </Link>
-          <Link to="/menu" className="links">
+          <Link to="/menu" className="links" onClick={() => setMenuOpen(false)}>
             <li>Menu</li>
           </Link>
           {location.pathname === "/" && (
             <>
-              <a href="#popular_dishes_container" className="links">
+              <a href="#popular_dishes_container" className="links" onClick={() => setMenuOpen(false)}>
                 <li>Products</li>
               </a>
-              <a href="#feedback_container" className="links">
+              <a href="#feedback_container" className="links" onClick={() => setMenuOpen(false)}>
                 <li>Reviews</li>
               </a>
             </>
           )}
-          <a href="#footer_container" className="links">
+          <a href="#footer_container" className="links" onClick={() => setMenuOpen(false)}>
             <li>Contact Us</li>
           </a>
         </ul>
@@ -69,7 +74,7 @@ const Header = () => {
             <div className={count > 0 ? "circle" : "circle-hidden"}>
               {count}
             </div>
-            <ShoppingBasketIcon style={{ height: "70px", width: "30px" }} />
+            <ShoppingBasketIcon className="cartBtn" style={{ height: "70px", width: "30px" }} />
           </div>
         </Link>
         {!user && (
@@ -80,13 +85,14 @@ const Header = () => {
             <button className="btn-secondary" onClick={handleSignUp}>
               Sign Up
             </button>
-          </>
+          </> 
         )}
         {
           user && <button className="btn-secondary" onClick={handleLogOut}>
           Log Out 
         </button>
         }
+        <MenuIcon className="menuBtn" onClick={() => setMenuOpen(true)}/>
       </div>
     </div>
   );

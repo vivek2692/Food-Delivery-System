@@ -31,3 +31,15 @@
     font-weight: bold;
     outline: none;
 }
+
+@media only screen and (max-width: 850px){
+    .filters{
+        flex-direction: column;
+        gap: 30px;
+        align-items: flex-start;
+    }
+
+    .filters input{
+        width: 50vw;
+    }
+}

@@ -92,3 +92,107 @@
   width: 20rem;
   margin-right: -20px;
 }
+
+@media only screen and (max-width: 1350px){
+  .sign_in_container .form-container {
+    width: 70vw;
+  }
+}
+
+@media only screen and (max-width: 1300px){
+  .sign_in_container .form-container {
+    width: 74vw;
+  }
+}
+
+@media only screen and (max-width: 1200px){
+  .sign_in_container .form-container {
+    width: 78vw;
+  }
+}
+
+@media only screen and (max-width: 1100px){
+  .sign_in_container .form-container {
+    width: 86vw;
+  }
+}
+
+@media only screen and (max-width: 980px){
+  .sign_in_container .form-container {
+    width: 60vw;
+    flex-direction: column;
+    height: fit-content;
+  }
+
+  .sign_in_container .form-container .form-logo {
+    width: 12rem;
+    margin-bottom: 20px;
+    margin-right: 0px;
+  }
+
+  .sign_in_container .form-container hr {
+    transform: rotate(0deg);
+    width: 60%;
+    margin-left: -160px;
+    margin-right: -160px;
+    margin-bottom: 10px;
+  }
+
+  .sign_in_container .form-container .form-right {
+    width: 70%;
+    margin-right: 0px;
+  }
+
+  .sign_in_container .form-container .form-right .form-feilds input,
+.sign_in_container .form-container .form-right .form-feilds textarea {
+  width: 35vw;
+  padding: 5px 12px;
+  font-size: 0.9rem
+}
+
+.sign_in_container .form-container .form-right .form-link {
+  margin-bottom: -7px;
+  margin-top: -15px;
+  font-size: 0.9rem;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.sign_in_container .form-container .form-right .form-title {
+  font-size: 2rem;
+  margin-bottom: -12px;
+}
+}
+
+@media only screen and (max-width: 900px){
+  .sign_in_container .form-container .form-right .form-feilds input,
+.sign_in_container .form-container .form-right .form-feilds textarea {
+  width: 40vw;
+  padding: 5px 12px;
+  font-size: 0.9rem;
+}
+}
+
+@media only screen and (max-width: 780px){
+  .sign_in_container .form-container .form-right .form-feilds input,
+.sign_in_container .form-container .form-right .form-feilds textarea {
+  width: 43vw;
+}
+}
+
+@media only screen and (max-width: 685px){
+  .sign_in_container .form-container {
+    width: 70vw;
+  }
+
+  .sign_in_container .form-container .form-right .form-link {
+    font-size: 0.9rem;
+    width: 400px;
+    text-align: center;
+  }
+
+  .sign_in_container .form-container .form-right .form-feilds input,
+.sign_in_container .form-container .form-right .form-feilds textarea {
+  width: 50vw;
+}
+}

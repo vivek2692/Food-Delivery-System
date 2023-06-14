@@ -27,10 +27,10 @@ const Home_Banner = () => {
             <button className="btn-secondary search-btn" onClick={handleClick}>Search Products  <span>|</span> <SearchIcon/> </button>
 
             <div className="banner_icons">
-                <FacebookRoundedIcon/>
-                <InstagramIcon/>
-                <TwitterIcon/>
-                <WhatsAppIcon/>
+                <FacebookRoundedIcon className='banner_icon'/>
+                <InstagramIcon className='banner_icon'/>
+                <TwitterIcon className='banner_icon'/>
+                <WhatsAppIcon className='banner_icon'/>
             </div>
         </div>
         <div className="banner_right">

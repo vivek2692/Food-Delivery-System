@@ -42,7 +42,7 @@ export default function Home() {
       <div className="container">
         <Sidebar />
         <div className="home">
-          <div className="chart" style={{display: "flex", alignItems: "center", justifyContent: "space-around"}}>
+          <div className="chart" style={{display: "flex", alignItems: "center", justifyContent: "flex-start", flexWrap: "wrap", gap: "2rem"}}>
             {data.map((item) => {
                 return <Card sx={{ Width: 345 }} style={{width: "250px", height: "300px"}}>
                 <CardActionArea>

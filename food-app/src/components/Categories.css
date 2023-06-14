@@ -14,3 +14,42 @@
     gap: 40px;
     flex-wrap: wrap;
 }
+
+@media only screen and (max-width: 1450px) {
+  .categories_container{
+    padding: 4rem 8rem;
+  }
+}
+
+@media only screen and (max-width: 1110px) {
+  .categories_container{
+    padding: 2rem 6rem;
+  }
+
+  .cat_head{
+    font-size: 34px;
+    text-align: center;
+}
+}
+
+@media only screen and (max-width: 770px) {
+  .categories_container{
+    padding: 2rem 3rem;
+  }
+
+  .cat_head{
+    font-size: 34px;
+    text-align: center;
+}
+}
+
+@media only screen and (max-width: 680px) {
+  .categories_container{
+    padding: 2rem 1rem;
+  }
+
+  .cat_head{
+    font-size: 34px;
+    text-align: center;
+}
+}
