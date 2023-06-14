@@ -16,7 +16,7 @@ export default function ProductList() {
   useEffect(() => {
     const GetData = async () => {
       await axios
-        .get(`http://localhost:5000/api/food/get-admin-food`)
+        .get(`https://react-backend-yzr8.onrender.com/api/food/get-admin-food`)
         .then((res) => {
           const info = res.data;
           console.log(info.data);
@@ -31,7 +31,7 @@ export default function ProductList() {
   }, []);
 
   const handleDelete = async(id) => {
-    await axios.get(`http://localhost:5000/api/food/delete/${id}`)
+    await axios.get(`https://react-backend-yzr8.onrender.com/api/food/delete/${id}`)
     .then((res) => {
       const data = res.data;
       alert(data.msg);

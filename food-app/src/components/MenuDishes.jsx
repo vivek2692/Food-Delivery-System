@@ -47,7 +47,7 @@ const MenuDishes = () => {
     const getData = async () => {
       setStatus("start");
       await axios
-        .get(`http://localhost:5000/api/food/get-all-food?name=${search}`)
+        .get(`https://react-backend-yzr8.onrender.com/api/food/get-all-food?name=${search}`)
         .then((res) => {
           const info = res.data.data;
           setData(info);

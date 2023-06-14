@@ -9,7 +9,7 @@ const Categories = () => {
 
   useEffect(() => {
     const GetData = async() => {
-      await axios.get("http://localhost:5000/api/category/get-all")
+      await axios.get("https://react-backend-yzr8.onrender.com/api/category/get-all")
       .then((res) => {
         const info = res.data;
         setData(info.data);

@@ -24,7 +24,7 @@ export default function User() {
 
   useEffect(() => {
     const GetUser = async() => {
-      await axios.get(`http://localhost:5000/api/users/find/${id}`)
+      await axios.get(`https://react-backend-yzr8.onrender.com/api/users/find/${id}`)
       .then((res) => {
         const data = res.data;
         console.log(data.data);

@@ -61,7 +61,7 @@ const Cart = () => {
       total_amount: total,
       items: item
     };
-    await axios.post("http://localhost:5000/api/order/create",obj)
+    await axios.post("https://react-backend-yzr8.onrender.com/api/order/create",obj)
     .then((res) => {
       const info = res.data;
       // console.log(info.data);

@@ -15,7 +15,7 @@ export default function Home() {
 
   useEffect(() => {
     const GetData = async() => {
-      await axios.get("http://localhost:5000/api/users/get-all")
+      await axios.get("https://react-backend-yzr8.onrender.com/api/users/get-all")
       .then((res) => {
         const data = res.data;
         console.log(data.data);

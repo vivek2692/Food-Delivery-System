@@ -20,7 +20,7 @@ const SignUp = () => {
         address: address
     };
 
-    await axios.post("http://localhost:5000/api/auth/sign-up",obj)
+    await axios.post("https://react-backend-yzr8.onrender.com/api/auth/sign-up",obj)
     .then((res) => {
         const data = res.data;
         console.log(data);

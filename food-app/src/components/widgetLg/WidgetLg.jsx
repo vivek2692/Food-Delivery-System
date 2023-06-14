@@ -7,7 +7,7 @@ export default function WidgetLg() {
 
   const GetData = async () => {
     await axios
-      .get("http://localhost:5000/api/order/payment")
+      .get("https://react-backend-yzr8.onrender.com/api/order/payment")
       .then((res) => {
         const temp = res.data;
         console.log(temp.data);

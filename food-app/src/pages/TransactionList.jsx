@@ -16,7 +16,7 @@ export default function ProductList() {
   useEffect(() => {
     const GetData = async () => {
       await axios
-        .get(`http://localhost:5000/api/order/payment`)
+        .get(`https://react-backend-yzr8.onrender.com/api/order/payment`)
         .then((res) => {
           const info = res.data;
           console.log(info.data);

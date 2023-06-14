@@ -13,7 +13,7 @@ const SignIn = () => {
     const obj = { email: email, password: password };
 
     await axios
-      .post("http://localhost:5000/api/auth/sign-in", obj)
+      .post("https://react-backend-yzr8.onrender.com/api/auth/sign-in", obj)
       .then((res) => {
         const data = res.data;
         console.log(data.data);

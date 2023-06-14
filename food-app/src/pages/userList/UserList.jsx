@@ -14,7 +14,7 @@ export default function UserList() {
   useEffect(() => {
     const GetData = async () => {
       await axios
-        .get("http://localhost:5000/api/users/get-all")
+        .get("https://react-backend-yzr8.onrender.com/api/users/get-all")
         .then((res) => {
           const data = res.data;
           console.log(data.data);
@@ -29,7 +29,7 @@ export default function UserList() {
   }, []);
 
   const handleDelete = async(id) => {
-    await axios.get(`http://localhost:5000/api/users/delete/${id}`)
+    await axios.get(`https://react-backend-yzr8.onrender.com/api/users/delete/${id}`)
     .then((res) => {
       const data = res.data;
       alert(data.msg);

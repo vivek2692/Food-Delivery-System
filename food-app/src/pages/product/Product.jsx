@@ -19,7 +19,7 @@ export default function Product() {
 
   useEffect(() => {
     const GetUser = async() => {
-      await axios.get(`http://localhost:5000/api/food/find/${id}`)
+      await axios.get(`https://react-backend-yzr8.onrender.com/api/food/find/${id}`)
       .then((res) => {
         const data = res.data;
         console.log(data.data);
